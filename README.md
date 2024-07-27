@@ -82,22 +82,8 @@ The IDS Academy website project successfully created a user-friendly platform fo
 ## Recordings
 
 ### Home Page
-<video width="640" controls>
-  <source src="https://github.com/Im-Hsn/IDS-Academy-W
-
-
-
-  
-
-https://github.com/user-attachments/assets/a57a90e5-8fe1-4d89-87f9-486f53804add
-
-
-
-
-
-ebsite/recordings/home.mp4" type="video/mp4">
+  <source src="https://github.com/user-attachments/assets/a57a90e5-8fe1-4d89-87f9-486f53804add" type="mp4">
   Your browser does not support the video tag.
-</video>
 
 ### Admin Page
 <video width="640" controls>
