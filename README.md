@@ -73,6 +73,11 @@ The project leverages a robust stack of technologies:
 9. **Apache Web Server:** Serves web content and PHP scripts.
 10. **PHP (Hypertext Preprocessor):** Generates dynamic content and handles authentication and database interactions.
 
+## Project Database
+Here is the database diagram:
+
+![Database Diagram](https://github.com/Im-Hsn/IDS-Academy-Website/raw/main/Database%20Creation/Database%20Diagram.png)
+
 ## Summary
 The chosen technology stack and iterative development approach ensured a robust and scalable foundation for the IDS Academy website. The project, executed independently, delivered a user-friendly platform tailored to the needs of its users.
 
@@ -82,19 +87,10 @@ The IDS Academy website project successfully created a user-friendly platform fo
 ## Recordings
 
 ### Home Page
-<video width="640" controls>
-  <source src="https://github.com/Im-Hsn/IDS-Academy-Website/recordings/home.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/72a493c6-79c4-4285-8209-a4fd7ddbface
 
 ### Admin Page
-<video width="640" controls>
-  <source src="https://github.com/Im-Hsn/IDS-Academy-Website/recordings/admin.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/a57a90e5-8fe1-4d89-87f9-486f53804add
 
 ### Applicant Page
-<video width="640" controls>
-  <source src="https://github.com/Im-Hsn/IDS-Academy-Website/recordings/applicant.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/f9744f61-e24c-41a4-9861-c650afcca08d
