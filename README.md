@@ -79,6 +79,10 @@ The chosen technology stack and iterative development approach ensured a robust 
 ## Conclusion
 The IDS Academy website project successfully created a user-friendly platform for IDS interns, employees, and administrators. The project, which tackled JavaScript learning, complex database operations, and responsive design, stands as a testament to effective development practices and personal growth. The website is well-positioned to support program management and learning experiences, with potential for future enhancements.
 
+## Project Documentation
+
+You can view the Database Diagram here [here](https://github.com/Im-Hsn/IDS-Academy-Website/blob/main/Database%20Creation/Database%20Diagram.pdf).
+
 ## Recordings
 
 ### Home Page
