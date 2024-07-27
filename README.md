@@ -80,19 +80,14 @@ The chosen technology stack and iterative development approach ensured a robust 
 The IDS Academy website project successfully created a user-friendly platform for IDS interns, employees, and administrators. The project, which tackled JavaScript learning, complex database operations, and responsive design, stands as a testament to effective development practices and personal growth. The website is well-positioned to support program management and learning experiences, with potential for future enhancements.
 
 ## Recordings
+<source src="" type="mp4">
+[![Home Page Recording](https://img.shields.io/badge/Watch-Home%20Page%20Recording-brightgreen)](https://github.com/Im-Hsn/IDS-Academy-Website/recordings/home.mp4)
 
 ### Home Page
-  <source src="https://github.com/user-attachments/assets/a57a90e5-8fe1-4d89-87f9-486f53804add" type="mp4">
-  Your browser does not support the video tag.
+[![Home Page Recording](https://img.shields.io/badge/Watch-Home%20Page%20Recording-brightgreen)]([https://github.com/Im-Hsn/IDS-Academy-Website/recordings/home.mp4](https://github.com/user-attachments/assets/a57a90e5-8fe1-4d89-87f9-486f53804add))
 
 ### Admin Page
-<video width="640" controls>
-  <source src="https://github.com/Im-Hsn/IDS-Academy-Website/recordings/admin.mp4" type="mp4">
-  Your browser does not support the video tag.
-</video>
+[![Admin Page Recording](https://img.shields.io/badge/Watch-Admin%20Page%20Recording-brightgreen)](https://github.com/Im-Hsn/IDS-Academy-Website/recordings/admin.mp4)
 
 ### Applicant Page
-<video width="640" controls>
-  <source src="https://github.com/Im-Hsn/IDS-Academy-Website/recordings/applicant.mp4" type="mp4">
-  Your browser does not support the video tag.
-</video>
+[![Applicant Page Recording](https://img.shields.io/badge/Watch-Applicant%20Page%20Recording-brightgreen)](https://github.com/Im-Hsn/IDS-Academy-Website/recordings/applicant.mp4)
