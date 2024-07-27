@@ -73,15 +73,16 @@ The project leverages a robust stack of technologies:
 9. **Apache Web Server:** Serves web content and PHP scripts.
 10. **PHP (Hypertext Preprocessor):** Generates dynamic content and handles authentication and database interactions.
 
+## Project Database
+Here is the database diagram:
+
+![Database Diagram](https://github.com/Im-Hsn/IDS-Academy-Website/raw/main/Database%20Creation/Database%20Diagram.png)
+
 ## Summary
 The chosen technology stack and iterative development approach ensured a robust and scalable foundation for the IDS Academy website. The project, executed independently, delivered a user-friendly platform tailored to the needs of its users.
 
 ## Conclusion
 The IDS Academy website project successfully created a user-friendly platform for IDS interns, employees, and administrators. The project, which tackled JavaScript learning, complex database operations, and responsive design, stands as a testament to effective development practices and personal growth. The website is well-positioned to support program management and learning experiences, with potential for future enhancements.
-
-## Project Documentation
-
-You can view the Database Diagram here [here](https://github.com/Im-Hsn/IDS-Academy-Website/blob/main/Database%20Creation/Database%20Diagram.pdf).
 
 ## Recordings
 
