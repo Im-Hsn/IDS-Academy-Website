@@ -1,0 +1,347 @@
+/* Body Styles */
+body {
+    background: linear-gradient(rgba(208, 235, 255, 0.9), #2980b9);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h3,
+.title h2 {
+    font-weight: bold;
+    color: #3498db;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.title h2{
+    padding-top: 100px;
+}
+
+.prog-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prog-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pad{
+    display: flex;
+    justify-content: center;
+}
+
+/* Registration Page Styles */
+.contain {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    transition: background-color 0.5s ease;
+    align-self: center;
+    margin-bottom: 100px;
+}
+
+
+/* Form Title Styles */
+.contain h1 {
+    font-size: 24px; 
+    margin-bottom: 20px;
+    color: #207ebc;
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    resize: none;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="number"]:hover,
+input[type="date"]:hover,
+textarea:hover {
+    border-color: #2980b9;
+    background-color: #F0F8FF;
+}
+
+.contain button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.contain button:hover {
+    background-color: #2980b9;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 4px 8px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.error-icon::before {
+    content: "\f06a";
+    font-family: FontAwesome;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #721c24;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Reset some default styles for input */
+.input-file {
+    display: none;
+}
+
+/* Style for the file upload container */
+.file-upload {
+    text-align: center;
+}
+
+/* Style for the file button */
+.file-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the file button */
+.file-button:hover {
+    background-color: #2980b9;
+}
+
+/* Style for the file icon */
+.file-icon {
+    margin-right: 10px;
+}
+
+/* Style for the file text */
+.file-text {
+    font-size: 16px;
+}
+
+.file-icon i {
+    font-size: 20px;
+}
+
+/* Modern Link Styles */
+.modern-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modern-link {
+    color: #3498db;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+    display: inline-block;
+    position: relative;
+    text-decoration: none !important; /* Remove default underline */
+}
+
+.modern-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #3498db;
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.3s;
+}
+
+.modern-link:hover {
+    color: #006cb4;
+    transform: translateY(-2px);
+}
+
+.modern-link:hover::before {
+    transform: scaleX(1);
+}
+
+.link-text {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Move user info to the extreme right */
+.user-info {
+    display: flex;
+    margin-right: -200px;
+    padding-left: 180px;
+    text-decoration: none !important;
+    transition: transform 0.7s;
+}
+
+.user-info i.fas.fa-user {
+    font-size: 24px;
+    color: #2b71bc;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+/* Style the user name */
+.user-info .user-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.user-info:hover {
+    transform: scale(1.1);
+}
+.user-info:hover i.fas.fa-user,
+.user-info:hover .user-name {
+    color: #1782c9;
+}
+
+/* User Profile Card Styles */
+.user-profile-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 200px;
+    margin-top: 150px;
+    padding-top: 51px;
+    padding-bottom: 51px;
+}
+
+.user-profile-card i {
+    font-size: 5rem;
+    color: #3498db;
+}
+
+.user-profile-card h4 {
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+}
+
+.user-profile-card p {
+    color: #777;
+}
+
+.user-profile-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* User Details Card Styles */
+.user-details-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.user-details-card h4 {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    font-size: 16px;
+    color: #555;
+}
+
+.list-group-item strong {
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.user-details-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.programs{
+    padding-top: 180px;
+    padding-bottom: 170px;
+}
+
+@media (max-width: 1023px) {
+    .user-info {
+        margin: 0;
+    }
+}

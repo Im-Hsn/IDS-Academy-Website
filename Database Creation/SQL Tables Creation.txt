@@ -1,0 +1,88 @@
+CREATE TABLE `Employee` (
+  `Employee ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Full Name` VARCHAR(100),
+  `Email` VARCHAR(100),
+  `Password` TEXT,
+  `Role` VARCHAR(100),
+  `Major` VARCHAR(100),
+  `Creation Date` TIMESTAMP
+);
+
+CREATE TABLE `Interns` (
+  `Intern ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Full Name` VARCHAR(100),
+  `Email` VARCHAR(100),
+  `Password` TEXT,
+  `Mobile Number` VARCHAR(20),
+  `University` VARCHAR(100),
+  `Major` VARCHAR(100),
+  `Graduation Date` DATE,
+  `CV` TEXT,
+  `Valid Email Check` TINYINT DEFAULT 1,
+  `Creation Date` TIMESTAMP
+);
+
+CREATE TABLE `Programs` (
+  `Program ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Title` VARCHAR(100),
+  `Description` TEXT,
+  `Start Date` DATE,
+  `End Date` DATE,
+  `Max Capacity` INT,
+  `Current Capacity` INT,
+  `Classroom Code` INT
+);
+
+CREATE TABLE `Pages` (
+  `Page ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Title` VARCHAR(100),
+  `Body` TEXT,
+  `Active Check` TINYINT,
+  `Priority` INT
+);
+
+CREATE TABLE `Program_Instructors` (
+  `Record ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Program ID` INT,
+  `Instructor ID` INT,
+  FOREIGN KEY (`Program ID`) REFERENCES `Programs`(`Program ID`),
+  FOREIGN KEY (`Instructor ID`) REFERENCES `Employee`(`Employee ID`)
+);
+
+CREATE TABLE `Lookups` (
+  `Lookup ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Name` VARCHAR(100),
+  `Code` INT
+);
+
+CREATE TABLE `Program_Interns` (
+  `Record ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Program ID` INT,
+  `Intern ID` INT,
+  `Application Status` VARCHAR(20) DEFAULT 'Pending',
+  FOREIGN KEY (`Program ID`) REFERENCES `Programs`(`Program ID`),
+  FOREIGN KEY (`Intern ID`) REFERENCES `Interns`(`Intern ID`)
+);
+
+CREATE TABLE `Lookup_Items` (
+  `Lookup Item ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Parent ID` INT,
+  `Name` VARCHAR(100),
+  `Code` INT,
+  `Priority` INT,
+  FOREIGN KEY (`Parent ID`) REFERENCES `Lookups`(`Lookup ID`)
+);
+
+CREATE TABLE `Certificates` (
+  `Certificate ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Intern ID` INT,
+  `Certificate File` TEXT,
+  FOREIGN KEY (`Intern ID`) REFERENCES `Interns`(`Intern ID`)
+);
+
+CREATE TABLE `Assessment_Exam_Links` (
+  `Exam ID` INT PRIMARY KEY AUTO_INCREMENT,
+  `Program ID` INT,
+  `Exam Link` VARCHAR(200),
+  FOREIGN KEY (`Program ID`) REFERENCES `Programs`(`Program ID`)
+);

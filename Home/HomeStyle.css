@@ -1,0 +1,281 @@
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: scale(1.06);
+}
+
+/* About Section Styles */
+.about {
+    background-color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 28px;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 18px;
+    color: #555;
+}
+
+.service-item {
+    margin-bottom: 50px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 18px;
+    color: #777;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+    background-color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 28px;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.portfolio p {
+    font-size: 18px;
+    color: #555;
+}
+
+.portfolio-item {
+    margin-bottom: 50px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h4 {
+    font-size: 20px;
+    color: #2980b9;
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+    border-color: #2980b9;
+    background-color: #F0F8FF;
+}
+
+.contact-form button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #2980b9;
+}
+
+.lead {
+    font-weight: bold !important;
+}
+
+.display-4 {
+    font-weight: bold !important;
+}
+
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.902), rgba(0, 165, 247, 0)), url('../Images/Internship.JPG');
+    background-size: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+
+    .about h2,
+    .services h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .about p,
+    .services p,
+    .portfolio p,
+    .contact p {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    .service-item,
+    .portfolio-item {
+        margin-bottom: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        padding: 10px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero,
+    .about,
+    .services,
+    .portfolio,
+    .contact,
+    .footer {
+        padding: 60px 0;
+    }
+
+    .hero h1,
+    .about h2,
+    .services h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 24px;
+    }
+
+    .hero p,
+    .about p,
+    .services p,
+    .portfolio p,
+    .contact p {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+
+    .contact-form button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .about h2,
+    .services h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .about p,
+    .services p,
+    .portfolio p,
+    .contact p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}

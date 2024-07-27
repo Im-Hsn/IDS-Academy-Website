@@ -1,0 +1,223 @@
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2e83d2;
+    transform: scale(1.06);
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, 0.902), rgba(0, 165, 247, 0)), url('../Images/Program.jpg');
+    background-size: cover;
+    text-align: left;
+}
+
+/* Introduction Section */
+.intro {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    max-width: 600px;
+    position: relative;
+    text-align: left;}
+
+.intro::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    animation: glowing 2s infinite;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+}
+
+@keyframes glowing {
+    0% {
+        opacity: 0;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        opacity: 0;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    }
+}
+
+/* Apply modern styles to sections */
+.about {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.ab {
+    padding-top: 100px;
+    padding-bottom: 1px;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Style program cards */
+.program-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.program-card h3 {
+    font-size: 24px;
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.program-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.program-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.program-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Description */
+.program-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.program-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.apply-btn{
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #25bd80;
+    display: block;
+    margin: 0 auto;
+}
+.apply-btn:hover {
+    background-color: #1fa264;
+}
+
+/* Expand Button */
+.expand-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    align-self: flex-end;
+    margin-bottom: 8px;
+}
+
+.expand-btn.clicked {
+    background-color: #979797;
+}
+
+/* Program Details Section */
+.program-details {
+    display: none;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+/* Program Info Items */
+.info-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-title {
+    font-weight: bold;
+    color: #3498db;
+    margin-right: 8px;
+    width: 110px;
+}
+
+.info-value {
+    color: #555;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .internship-title {
+        font-size: 30px;
+    }
+    
+    .internship-description {
+        font-size: 16px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+    
+    .about p {
+        font-size: 16px;
+    }
+
+    .program-card {
+        padding: 20px;
+    }
+
+    .program-card h3 {
+        font-size: 20px;
+    }
+
+    .program-card p {
+        font-size: 14px;
+    }
+
+    .program-card a {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}

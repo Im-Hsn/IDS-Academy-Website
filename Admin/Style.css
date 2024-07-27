@@ -1,0 +1,178 @@
+.delete-btn{
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #ea4747;
+    display: block;
+    margin: 0 auto;
+}
+.delete-btn:hover {
+    background-color: #ad2727;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.download-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    background-color: #007bff;
+}
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.accept-reject-container {
+    display: flex;
+    justify-content: center;
+}
+
+.accept-btn, .reject-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin: 0 5px; 
+}
+
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    max-width: 500px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #777;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.contain{
+    margin-top: 150px ;
+}
+
+/* Style for buttons */
+.confirm-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 0px;
+}
+
+.confirm-btn:hover {
+    background-color: #d32f2f;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.dropdown-options {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dropdown-button {
+    background-color: #3498db;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-button:hover {
+    background-color: #2980b9;
+}
+
+.dropdown-options {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 125%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Display the dropdown options */
+.dropdown-options.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Style for each dropdown option */
+.dropdown-option {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-option:hover {
+    background-color: #f5f5f5;
+}
+
+.selected-instructor {
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+.instructor-tag {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
